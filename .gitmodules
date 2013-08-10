@@ -1,0 +1,21 @@
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/neosnippet"]
+	path = vim/bundle/neosnippet
+	url = git://github.com/Shougo/neosnippet.git
+[submodule "vim/bundle/neocomplcache"]
+	path = vim/bundle/neocomplcache
+	url = git://github.com/Shougo/neocomplcache.git
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = git://github.com/scrooloose/syntastic
+[submodule "vim/bundle/local-vimrc"]
+	path = vim/bundle/local-vimrc
+	url = git://github.com/MarcWeber/vim-addon-local-vimrc.git

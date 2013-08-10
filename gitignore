@@ -1,0 +1,12 @@
+*.class
+.metadata
+.project
+.classpath
+build
+dist
+.settings
+*.swp
+*.pyc
+*.o
+*.a
+*.log
