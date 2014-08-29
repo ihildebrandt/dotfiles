@@ -24,4 +24,4 @@ fi
 export EC2_HOME=/opt/ec2-api-tools-1.6.8.0
 export JAVA_HOME=/usr
 
-export PATH=$PATH:$EC2_HOME/bin
+export PATH=$PATH:$EC2_HOME/bin:$HOME/.local/share/activator
