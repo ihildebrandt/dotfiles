@@ -28,3 +28,6 @@
 [submodule "grunt_init/csharpsolution"]
 	path = grunt_init/csharpsolution
 	url = https://github.com/nosami/grunt-init-csharpsolution.git
+[submodule "vim/bundle/neocomplete"]
+	path = vim/bundle/neocomplete
+	url = https://github.com/shougo/neocomplete.vim

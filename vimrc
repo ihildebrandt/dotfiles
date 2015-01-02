@@ -54,26 +54,10 @@ map <Leader>o <C-W>o
 """""""""""""""""""
 " NeoComplete setup
 """""""""""""""""""
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_min_keyword_length = 3
 
-" CR completion
-inoremap <silent> <CR> <C-r>=<SID>_cr()<CR>
-	function! s:_cr()
-		return neocomplcache#smart_close_popup() . "\<CR>"
-	endfunction
-
-" Tab completion
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y> neocomplcache#close_popup()
-inoremap <expr><C-e> neocomplcache#cancel_popup()
-
-inoremap <expr><C-k> pumvisible() ? "\<up>" : "\<C-k>"
-inoremap <expr><C-j> pumvisible() ? "\<down>" : "\<C-j>"
-" inoremap <expr><TAB> pumvisible() ? neocomplcache#close_popup() : "\<TAB>"
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 2
 
 """"""""""""""""""
 " NeoSnippet setup 
