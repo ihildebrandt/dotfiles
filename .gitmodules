@@ -22,3 +22,9 @@
 [submodule "vim/bundle/nimrod"]
 	path = vim/bundle/nimrod
 	url = https://github.com/zah/nimrod.vim
+[submodule "vim/bundle/omnisharp"]
+	path = vim/bundle/omnisharp
+	url = https://github.com/omnisharp/omnisharp-vim
+[submodule "grunt_init/csharpsolution"]
+	path = grunt_init/csharpsolution
+	url = https://github.com/nosami/grunt-init-csharpsolution.git
