@@ -28,15 +28,18 @@ set scrolloff=3
 
 set nowrap
 
-set filetype=on
-filetype plugin on
-filetype indent on
-
 set colorcolumn=80
 set ts=2
 set sts=2
 set sw=2
 set ai
+
+set filetype=on
+filetype plugin on
+filetype indent on
+
+autocmd Filetype nim setlocal ts=2 sts=2 sw=2 et
+autocmd Filetype py setlocal ts=4 sts=4 sw=4 et
 
 syntax enable
 
@@ -86,7 +89,7 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 	\: pumvisible() ? neocomplcache#close_popup() : "\<TAB>"
 
 if has('conceal')
-	set conceallevel=2 concealcursor=i
+	set conceallevel=0 concealcursor=i
 endif
 
 " Global variables
@@ -107,3 +110,17 @@ let g:syntastic_php_checkers=['php']
 " Local VIMRC setup
 """""""""""""""""""
 let g:local_vimrc = {'names':['local.vimrc']}
+
+""""""""""""""""""""""""""""
+" Lookup function for nimrod
+""""""""""""""""""""""""""""
+fun! JumpToDef()
+	if exists("*GotoDefinition_" . &filetype)
+		call GotoDefinition_{&filetype}()
+	else
+		exe "norm! \<C-]>"
+	endif
+endf
+
+nn <M-g> :call JumpToDef()<cr>
+ino <M-g> <esc>:call JumpToDef()<cr>i

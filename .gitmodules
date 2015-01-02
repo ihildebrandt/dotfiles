@@ -19,3 +19,6 @@
 [submodule "vim/bundle/local-vimrc"]
 	path = vim/bundle/local-vimrc
 	url = git://github.com/MarcWeber/vim-addon-local-vimrc.git
+[submodule "vim/bundle/nimrod"]
+	path = vim/bundle/nimrod
+	url = https://github.com/zah/nimrod.vim
