@@ -31,3 +31,12 @@
 [submodule "vim/bundle/neocomplete"]
 	path = vim/bundle/neocomplete
 	url = https://github.com/shougo/neocomplete.vim
+[submodule "grunt-init/csharpsolution"]
+	path = grunt-init/csharpsolution
+	url = https://github.com/nosami/grunt-init-csharpsolution.git
+[submodule "vim/bundle/crtlp"]
+	path = vim/bundle/crtlp
+	url = https://github.com/kien/ctrlp.vim
+[submodule "vim/bundle/csharp"]
+	path = vim/bundle/csharp
+	url = https://github.com/OrangeT/vim-csharp
