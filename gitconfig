@@ -2,3 +2,6 @@
 	editor = vim
 [color]
 	ui = true
+[user]
+  email = isaac@pihimedia.com
+	name = "P. Isaac Hildebrandt"
