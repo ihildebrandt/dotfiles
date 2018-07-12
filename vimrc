@@ -1,6 +1,8 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+
+
 let mapleader="'"
 imap jj <Esc>
 
